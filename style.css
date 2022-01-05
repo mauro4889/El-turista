@@ -222,3 +222,65 @@ figure img{
 .nosotros{
     margin-top: 30%;
 }
+.olvido-contra p{
+    color: white;
+}
+.olvido-contra a{
+    color:cadetblue;
+    text-decoration:underline;
+}
+
+/* Inicio de Media Query */
+
+@media (min-width: 426px){
+    .navigation-container ul{
+        justify-content: space-around;
+    }
+    .intro{
+        margin-top: 0;
+    }
+    .intro h2{
+        margin-bottom: 0;
+    }
+    .container-intro{
+        margin-top: 8%;
+    }
+    .lugar figure{
+        width: 50%;
+    }
+    .container-galeria{
+        margin-top: 5%;
+    }
+    .galeria figure{
+        width: 50%;
+    }
+    .container-login input{
+        margin: auto;
+        height: 2.5em;
+        font-weight: 800;
+    }
+}
+@media (min-width: 769px){
+    .container-intro{
+        margin-top: 5%;
+        margin-bottom: 0;
+    }
+    .container-intro h3{
+        font-size: 300%;
+    }
+    .container-intro p{
+        font-size: xx-large;
+    }
+    .contenedor-principal{
+        flex-direction: row;
+        margin-top: 5%;
+    }
+    .lugar figure{
+        width: 80%;
+        height: 14em;
+    }
+    .container-login{
+        margin-top: 5%;
+        width: 40%;
+    }
+}

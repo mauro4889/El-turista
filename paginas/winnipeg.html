@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b4fc6ad5d9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <title>Las Grutas</title>
 </head>
 <body>
@@ -31,20 +32,43 @@
                 Winnipeg es la capital de la provincia Manitoba, en Canadá. Su núcleo es The Forks, un sitio histórico en la intersección de los ríos Rojo y Assiniboine, con almacenes convertidos en tiendas y restaurantes, junto con amplias áreas verdes dedicadas a festivales, conciertos y exhibiciones. Cerca se encuentra el Exchange District, conocido por su arquitectura bien conservada de comienzos del siglo XX y sus numerosas galerías de arte.
             </p>
         </div>
-        <div class="galeria">
-            <h3>Galeria de imagenes</h3>
-            <div class="contenedor-galeria">
-                <figure>
-                    <img src="/images/Winnipeg/Winnipeg02.jpg" alt="Winnipeg">
-                </figure>
-                <figure>
-                    <img src="/images/Winnipeg/Winnipeg03.jpg" alt="Winnipeg">
-                </figure>
-                <figure>
-                    <img src="/images/Winnipeg/Winnipeg04.jpg" alt="Winnipeg">
-                </figure>
-            </div>         
-        </div>
+    <!--INICIO DE SLIDER-->
+
+    <div class="contenedor-slider">
+        <h2>Galeria de imagenes</h2>
+            <div class="contenedor">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="selector-1">
+                        <img src="/images/Winnipeg/Winnipeg02.jpg" alt="Winnipeg">
+                    </label>
+                    <label class="card" for="item-2" id="selector-2">
+                        <img src="/images/Winnipeg/Winnipeg03.jpg" alt="Winnipeg">
+                    </label>
+                    <label class="card" for="item-3" id="selector-3">
+                        <img src="/images/Winnipeg/Winnipeg04.jpg" alt="Winnipeg">
+                    </label>
+                </div>
+            </div>
     </div>
+    
+    <!--FIN DEL SLIDER-->
+    </div>
+    <footer>
+        <div class="nav-footer">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

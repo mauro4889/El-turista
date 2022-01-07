@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/b4fc6ad5d9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="/css/slider.css">
     <title>Las Grutas</title>
 </head>
 <body>
@@ -31,20 +32,43 @@
                 Las cataratas del Iguazú, llamadas popularmente en Argentina como «Las Cataratas» o «Las Cataratas del Iguazú», son un conjunto de cataratas que se localizan sobre el río Iguazú, en el límite entre la provincia argentina de Misiones y el estado brasileño de Paraná.
             </p>
         </div>
-        <div class="galeria">
-            <h3>Galeria de imagenes</h3>
-            <div class="contenedor-galeria">
-                <figure>
-                    <img src="/images/Cataratas-del-iguazu/cataratas-iguazu.jpg" alt="Cataratas-del-iguazu">
-                </figure>
-                <figure>
-                    <img src="/images/Cataratas-del-iguazu/cataratas-iguazu3.jpg" alt="Cataratas-del-iguazu">
-                </figure>
-                <figure>
-                    <img src="/images/Cataratas-del-iguazu/turismo-cataratas-del-iguazu.jpg" alt="Cataratas-del-iguazu">
-                </figure>
+    <!--INICIO DE SLIDER-->
+
+    <div class="contenedor-slider">
+        <h2>Galeria de imagenes</h2>
+            <div class="contenedor">
+                <input type="radio" name="slider" id="item-1" checked>
+                <input type="radio" name="slider" id="item-2">
+                <input type="radio" name="slider" id="item-3">
+                <div class="cards">
+                    <label class="card" for="item-1" id="selector-1">
+                        <img src="/images/Cataratas-del-iguazu/cataratas-iguazu.jpg" alt="Cataratas del Iguazu">
+                    </label>
+                    <label class="card" for="item-2" id="selector-2">
+                        <img src="/images/Cataratas-del-iguazu/cataratas-iguazu3.jpg" alt="Cataratas del Iguazu">
+                    </label>
+                    <label class="card" for="item-3" id="selector-3">
+                        <img src="/images/Cataratas-del-iguazu/turismo-cataratas-del-iguazu.jpg" alt="Cataratas del Iguazu">
+                    </label>
+                </div>
             </div>
-        </div>
     </div>
+    
+    <!--FIN DEL SLIDER-->
+    </div>
+    <footer>
+        <div class="nav-footer">
+            <ul>
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </div>
+        <div class="redes">
+            <ul>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-snapchat-ghost"></i></a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>

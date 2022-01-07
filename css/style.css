@@ -7,7 +7,9 @@ body{
     background: url(/images/fondo4.jpg) no-repeat center center/cover;    
     margin: 0;
     padding: 0;
-    height: 100vh;
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 10%;
 }
 .nav-container{
     width: 100%;
@@ -19,6 +21,7 @@ nav{
     height: 100%;
     display: flex;
     justify-content: space-between;
+    margin-top: 0;
 }
 .logo{
     width: 40%;
@@ -215,7 +218,6 @@ p{
 }
 footer{
     width: 100%;
-    margin: 0;
     background: black;
     display: flex;
     align-items: center;

@@ -7,6 +7,7 @@ body{
     background: url(/images/fondo4.jpg) no-repeat center center/cover;    
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 .nav-container{
     width: 100%;
@@ -218,6 +219,8 @@ footer{
     background: black;
     display: flex;
     align-items: center;
+    position: absolute;
+    bottom: 0;
 }
 .nav-footer{
     width: 100%;
@@ -250,6 +253,89 @@ footer{
     margin: 1% 5%;
 }
 
+.contenedor-contacto{
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    margin-top: 25%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-contacto span{
+    width: 70%;
+    margin:1% auto;
+    color: white;
+    font-size: 140%;
+    font-weight: 800;
+    text-align: center;
+    margin-left: 0;
+}
+.contenedor-contacto input{
+    width: 50%;
+    margin: auto 0;
+    height: 2.5em;
+    font-weight: 800;
+}
+.datos{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 5%;
+}
+.datos span{
+    text-align: left;
+}
+.consulta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.consulta input[type=textarea]{
+    margin: auto;
+    height: 10em;
+    resize: none;
+    width: 90%;
+}
+.consulta input[type=submit]{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 2% auto;
+}
+.contenedor-registro{
+    width: 80%;
+    background: rgba(0, 0, 0, 0.7);
+    margin: auto;
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.contenedor-registro span{
+    width: 70%;
+    margin:1% auto;
+    margin-left: 0;
+    color: white;
+    font-size: 140%;
+    font-weight: 800;
+    text-align: left;
+}
+.contenedor-registro input{
+    width: 70%;
+    margin: auto;
+    margin-left: 0;
+    height: 2.5em;
+    font-weight: 800;
+}
+.contenedor-registro input[type=submit]{
+    font-size: 15px;
+    font-weight: 800;
+    margin: 2% auto;
+}
+
 /* Inicio de Media Query */
 
 @media (min-width: 426px){
@@ -275,6 +361,12 @@ footer{
         margin: auto;
         height: 2.5em;
         font-weight: 800;
+    }
+    .contenedor-contacto{
+        margin-top: 5%;
+    }
+    .contenedor-registro input{
+        width: 45%;
     }
 }
 @media (min-width: 769px){
@@ -325,7 +417,10 @@ footer{
         margin-top: 5%;
         width: 40%;
     }
-    footer{
-        margin-top: 10%;
+    .contenedor-contacto{
+        width: 50%;
+    }
+    .contenedor-registro{
+        margin-top: 5%;
     }
 }

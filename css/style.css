@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Flamenco:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@500;600;700&family=Big+Shoulders+Display:wght@700&family=Flamenco&family=Source+Serif+4:wght@300;400;500&display=swap');
 *{
-    font-family: 'Advent Pro', sans-serif;
-    font-family: 'Flamenco', cursive;
+    font-family: 'Source Serif 4';
 }
-body{
-    background: url(/images/fondo4.jpg) no-repeat center center/cover;    
+body{    
     margin: 0;
     padding: 0;
     min-height: 100vh;
     position: relative;
     padding-bottom: 10%;
+    border-radius: 50%;
+}
+.head-container{
+    width: 100%;
+    background: url(/images/fondo4.jpg) no-repeat center center/cover;
 }
 .nav-container{
     width: 100%;
@@ -37,7 +41,6 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0;
 }
 .navigation-container ul{
     width: 40%;
@@ -45,7 +48,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-right: 5%;
+    padding: 2%;
 }
 a{
     color: white;
@@ -64,8 +67,8 @@ a:visited{
 }
 li{
     list-style: none;
-    font-size: large;
-    font-weight: bolder;
+    font-size: 100%;
+    font-weight: 400;
 }
 i{
     font-size: 130%;
@@ -73,16 +76,19 @@ i{
     color: white;
 }
 .intro{
-    width: 90%;
-    margin: 30% auto;
+    width: 100%;
+    height: 40em;
+    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(11,29,38);
+    background: linear-gradient(0deg, rgba(11,29,38,1) 0%, rgba(255,255,255,0) 50%);
 }
 h2{
     font-size: 250%;
-    font-weight: 900;
+    font-weight: 500;
     margin: 10% auto;
     color: white;
 }
@@ -102,12 +108,109 @@ p{
 }
 .container-intro h3{
     font-size: xx-large;
-    font-weight: 900;
+    font-weight: 00;
     color: white;
 }
 .container-intro p{
     font-weight: 600;
 }
+.main-container{
+    background-color: #0b1d26;
+    width: 100%;
+    padding-top: 30%;
+    margin-bottom: 0%;
+}
+.section-lugares, .section-nosotros, .section-login, .section-contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.section-login{
+    padding-bottom: 10%;
+}
+figure{
+    width: 100%;
+    margin-bottom: 0;
+}
+.section-lugares img{
+    width: 90%;
+    margin: 5%;
+    height: 12em;
+}
+.section-lugares h3{
+    color: white;
+    font-size: x-large;
+    font-weight: inherit;
+    margin: 0 auto;
+}
+.section-lugares p{
+    font-size: 110%;
+    font-weight: lighter;
+}
+.section-nosotros img{
+    width: 90%;
+    height: 12em;
+    margin: 5%;
+}
+.section-nosotros h3{
+    color: white;
+    font-size: x-large;
+    font-weight: inherit;
+    margin: 0 auto;
+}
+.section-nosotros p{
+    font-size: 110%;
+    font-weight: lighter;
+}
+.section-login img{
+    width: 90%;
+    height: 12em;
+    margin: 5%;
+}
+.section-login h3{
+    color: white;
+    font-size: x-large;
+    font-weight: inherit;
+    margin: 0 auto;
+}
+.section-login p{
+    font-size: 110%;
+    font-weight: lighter;
+}
+.section-contacto img{
+    width: 90%;
+    height: 12em;
+    margin: 5%;
+}
+.section-contacto h3{
+    color: white;
+    font-size: x-large;
+    font-weight: inherit;
+    margin: 0 auto;
+}
+.section-contacto p{
+    font-size: 110%;
+    font-weight: lighter;
+}
+.leer-mas{
+    width: 80%;
+    height: 2em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.leer-mas a{
+    color: blanchedalmond;
+}
+i{
+    margin-left: 2%;
+    font-size: 100%;
+    padding-top: 1%;
+}
+
 .contenedor-principal{
     width: 100%;
     display: flex;
